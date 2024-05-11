@@ -1,21 +1,20 @@
 #include <stdio.h>
 
 int main(){
-  long int LimiteSerie;
+  long int serieLimit;
   long double fat = 1.0;
   long double e = 1.0;
 
-  printf("Digite um limite para a serie: ");
-  scanf("%ld", &LimiteSerie);
+  printf("Define a limit to the serie: ");
+  scanf("%ld", &serieLimit);
 
 
-  for(long int i = 1; i <= LimiteSerie; i++){
+  for(long int i = 1; i <= serieLimit; i++){
     for(int num = 1; num <= i; num++){
       fat = fat*num;
     }
     e += (1/fat);
-    printf("fat (%ld): %.0Lf\n", i, fat);
-    printf("euler parcial: %.50Lf\n\n", e);
     fat = 1.0;
   }
+  printf("euler: %.50Lf\n\n", e);
 }

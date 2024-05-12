@@ -45,4 +45,5 @@ int main(){
         sin = -1*sin;
 
     printf("\nsin(%.2f) = %.15Lf\n", angle, sin);
+    return 0;
 }

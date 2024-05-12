@@ -45,4 +45,5 @@ int main(){
         cos = -1*cos;
 
     printf("\ncos(%.2f) = %.15Lf\n", angle, cos);
+    return 0;
 }

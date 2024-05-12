@@ -17,4 +17,5 @@ int main(){
     fat = 1.0;
   }
   printf("euler: %.50Lf\n\n", e);
+  return 0;
 }
